@@ -1,13 +1,20 @@
 <script setup>
-import { ref } from "vue"
-
-const name = ref("")
+import UserCard from "./components/UserCard.vue"
 </script>
 
 <template>
-  <div>
-    <input type="text" v-model="name" placeholder="Enter your name" />
-
-    <h2 v-if="name">Hello {{ name }}</h2>
+  <div class="container">
+    <UserCard name="Alemayew" role="Frontend Developer" />
+    <UserCard name="Naol" role="Vue.js Learner" />
+    <UserCard name="Natnael" role="UI Designer" />
   </div>
 </template>
+
+<style scoped>
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+</style>

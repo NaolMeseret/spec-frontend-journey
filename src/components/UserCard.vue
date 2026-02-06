@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 defineProps({
   name: String,
   role: String
@@ -29,4 +29,4 @@ h2 {
 p {
   color: #555;
 }
-</style>
+</style> -->
